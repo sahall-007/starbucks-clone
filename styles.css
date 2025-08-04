@@ -1,0 +1,514 @@
+body{
+    margin: 0px 0px 25px 0px;
+    overflow-x: hidden;         /* to hide any content overflowing in x axis */
+}
+hr{
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+header{
+    display: flex;   /* to make the content in header align horizontal */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 40px 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.07) 0px 0px 2px 0px
+}
+header ul{
+    list-style-type: none;     /* to remove the point symbols of ul tag */
+    font-family: "SoDoSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+header a{
+    text-decoration: none;        /* to remove underline of a tag */
+    color: rgba(0, 0, 0, 0.87) ;
+}
+header a:hover, i:hover{
+    color: rgb(22, 139, 76);
+}
+
+#logo{
+    cursor: pointer;
+    float: left;           /* to align the logo properly with the nav bar on the left */
+    width: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.left-navbar ul{
+    margin-top: 20px;
+    display: flex;
+}
+
+.left-navbar a{
+    margin: 15px;
+    letter-spacing: 1.6px;    /* to put spacing in between each letters */
+}
+
+
+/*-------------------left nav bar ends here-------------------------*/
+
+/*-------------------right nav bar starts here-------------------------*/
+.right-navbar ul{
+    display: flex;
+}
+
+.right-navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.right-navbar a{
+    font-weight: 600;
+    letter-spacing: 0.5;
+}
+
+.sign-button{
+    margin-left: 65px;
+    background-color: white ;
+    border-radius: 15px;
+    border-width: 1px;
+    padding: 7px 14px 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sign-button:hover{
+    background-color: rgb(236, 232, 232) ;
+}
+
+.join-button{
+    margin-left: 20px;
+    background-color: black ;
+    color: white ;
+    border-radius: 15px;
+    border-width: 1px;
+    padding: 7px 14px 7px 14px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.join-button:hover{             /* to change the property when we hover over*/
+    background-color: rgb(71, 71, 71) ;
+}
+
+/*-------------------right nav bar ends here-------------------------*/
+
+/*-------------------main content starts here-------------------------*/
+main{
+    padding: 0px 40px 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.07) 0px 0px 2px 0px
+
+}
+/*-------grid for all 6 parent div------*/
+.container{
+    display: grid;             /* to make the container class child like grid */
+    grid-template-rows: 100%;  /* to  give 1 row in each container */
+    grid-template-columns: 50% 50%;  /* to give 2 columns in each container */
+    margin-top: 30px;
+}
+/*-------------------------------------*/
+
+/*-------all image width-------*/
+.img-grid img{
+    width: 100%;
+
+}
+/*----------------------*/
+
+/*----------------all non image grid------------------*/
+.non-img-grid{
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*-------------------------------------*/
+
+/*--------------all buttons in grid------------------*/
+.button {
+    padding: 7px 16px 7px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 0.3s;      /* to have transition delay of 0.3s */
+    cursor: pointer;
+    
+}
+/*-------------------------------------*/
+
+#grid1{
+    background-color: rgb(249, 238, 223);
+    color: rgb(0, 99, 66);
+    height: 625.338px;
+    
+}
+.grid1-info{
+    margin-top: -50px;
+    width:  518px;
+}
+
+#grid1-h2{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 60px;
+    width: 518px;
+    margin-bottom: 24px;
+}
+
+#grid1-h3{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: auto;
+    letter-spacing: 0.5px;
+    width: 475px;
+}
+#order-button{
+    background-color: rgb(0, 117, 74);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+#order-button:hover{
+    background-color: rgb(0, 139, 88);
+}
+
+/*-------------------grid 1 ends here-------------------------*/
+
+#grid2{
+    background-color: rgb(247, 240, 228);
+    color: rgb(50, 70, 47);
+    height: 625.338px;
+
+}
+
+.grid2-info {
+    margin-top: -50px;
+}
+
+#grid2-h2{
+    font-size: 50px;
+    font-weight: 600;
+    width: 518px;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+#grid2-h5{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: justify;
+    text-align-last: center;
+    width: 450px; 
+    margin: auto;
+}
+
+#order-button2{
+    background-color: rgb(247, 240, 228);
+    border-width: 1px;
+}
+#order-button2:hover{
+    background-color: rgb(227, 222, 214);
+}
+
+/*--------------------grid 2 ends here------------------------*/
+
+#grid3 {
+    background-color: rgb(209, 209, 170);
+    color: rgb(50, 71, 47);
+    height: 420.225px;
+}
+
+.grid3-info {
+    margin-top: -25px;
+}
+
+#grid3-h2{
+    font-size: 24px;
+    font-weight: 600;
+    width: 518px;
+    margin-bottom: 24px;
+}
+
+#grid3-h5 {
+    font-size: 19px;
+    font-weight: 400;
+    width: 518px;
+    line-height: 33.25px;
+    letter-spacing: 0.5px;
+    margin: auto;
+}
+
+#join-order-btn {
+    background-color: rgb(209, 209, 170);
+    border-width: 1px;
+}
+
+#join-order-btn:hover {
+    background-color: rgb(196, 196, 166);
+}
+
+/*--------------------grid 3 ends here------------------------*/
+
+#grid4 {
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    height: 420.225px;
+}
+
+.grid4-info {
+    margin-top: -25px;
+}
+
+#grid4-h2{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.16px;
+}
+
+#grid4-h5 {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 33.25px;
+    letter-spacing: 0.5px;
+    width: 500px;
+    margin: auto;
+}
+
+#enter-sweep-btn {
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 255, 255);
+    border-color: white;
+    border-width: 1px;
+}
+
+#enter-sweep-btn:hover{
+    background-color: black;
+}
+
+/*-------------------grid 4 ends here-----------------------*/
+
+#grid5{
+    background-color: rgb(50, 70, 47);
+    color: white;
+    height: 625.338px;
+}
+
+.grid5-info {
+    margin-top: -50px;
+    width: 518px;
+}
+
+#grid5-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 60px;
+}
+
+#grid5-h5{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    margin: auto;
+}
+
+#find-store-btn {
+    background-color: rgb(50, 70, 47);
+    color: white;
+    border-color: white;
+    border-width: 1px;
+}
+
+#find-store-btn:hover{
+    background-color: rgb(39, 51, 37);
+}
+
+/*--------------------grid 5 ends here------------------------*/
+
+#grid6 {
+    background-color: rgb(0, 98, 66);
+    color: white;
+    height: 625.338px;
+}
+
+.grid6-info{
+    margin-top: -50px;
+}
+
+#grid6-h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 2px;
+    width: 514px;
+    margin-bottom: 30px;
+}
+
+#grid6-h5{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    width: 500px;
+    margin: auto;
+}
+
+#learn-more-btn{
+    background-color: rgb(0, 98, 66) ;
+    color: white;
+    border-color: white;
+    border-width: 1px;
+}
+
+#learn-more-btn:hover{
+    background-color: rgb(5, 84, 58);
+}
+
+/*--------------------grid 6 ends here------------------------*/
+
+
+/*---------------paragraph starts-----------------------------*/
+
+.para1a{
+    margin: 64px 40px 100px 40px;
+}
+
+.para1b{
+    margin: auto;
+    width: 640px;
+    text-align: center;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.16px;
+}
+
+.para2a{
+    margin-bottom: 30px;
+}
+
+.para2b{
+    margin: auto;
+    width: 640px;
+    text-align: center;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.16px;
+}
+
+.para2b a{
+    color: black;
+}
+.para2b a:hover{
+    text-decoration: none;
+}
+
+/*-----------------paragraph ends---------------------------*/
+
+.footer-section{
+    margin: 24px 35px 24px 35px;
+    display: flex;
+}
+
+.footer-section h2{
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    line-height: 28.5px;
+    letter-spacing: 0.16px;
+}
+.footer-section ul{
+    list-style-type: none;
+    padding-left: 0px;
+    text-align: left;
+}
+
+.footer-section a{
+    text-decoration: none;
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.58);
+    padding-top: 8px;
+    padding-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.footer-section li{
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+.footer-cols{
+    width: 195px;
+    margin-right: 32px;
+
+}
+
+.footer hr{
+    margin: 24px 40px 24px 40px;
+    display: block;
+}
+
+/*-----------------socials starts here------------------------*/
+
+.Socials{
+    margin: 35px 40px 40px 35px;
+}
+
+.Socials img{
+    width: 32px;
+    padding: 7px;
+    transition: 0.1s;
+}
+
+.Socials img:hover{
+    border-radius: 50%;
+    background-color: rgba(2, 2, 2, 0.128);
+}
+
+/*----------------socials ends here-------------------------*/
+
+.terms{
+    font-family: SoDoSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+}
+
+.terms ul{
+    list-style-type: none;
+} 
+
+.terms li{
+    margin-bottom: 20px;
+}
+
+.terms a{
+    text-decoration: none;
+    color: black;
+}
+.terms a:hover{
+    text-decoration: underline;
+}
+#copy-right{
+    color: rgba(0, 0, 0, 0.58);
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
